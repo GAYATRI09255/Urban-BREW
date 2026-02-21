@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Urban Brew | Specialty Coffee & Work Café</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #1a1a1a;
+    background: #ffffff;
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    padding: 25px 0;
+    position: fixed;
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+}
+
+nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #b88e52;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    width: 100%;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.btn {
+    background: #b88e52;
+    padding: 14px 32px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #9d753f;
+}
+
+.section {
+    padding: 120px 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    max-width: 700px;
+    margin: auto;
+}
+
+.menu-grid {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.menu-card {
+    padding: 40px 25px;
+    border: 1px solid #eee;
+    transition: 0.3s ease;
+}
+
+.menu-card:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transform: translateY(-5px);
+}
+
+.menu-card h3 {
+    margin-bottom: 10px;
+}
+
+.dark-section {
+    background: #111;
+    color: white;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+footer {
+    padding: 30px 0;
+    text-align: center;
+    background: #f5f5f5;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .hero h1 {
+        font-size: 34px;
+    }
+    nav {
+        display: none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">Urban Brew</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#workspace">Workspace</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container hero-content">
+        <h1>Where Coffee Meets Creativity.</h1>
+        <p>A premium specialty café & work space crafted for freelancers, founders, and focused students.</p>
+        <a href="#contact" class="btn">Visit Urban Brew</a>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <div class="container">
+        <h2>Designed For Modern Work Culture</h2>
+        <p>
+            Urban Brew blends specialty coffee with a thoughtfully designed workspace.
+            High-speed WiFi, charging stations, collaborative tables, and calm corners —
+            everything built for productivity and comfort.
+        </p>
+    </div>
+</section>
+
+<section id="menu" class="section">
+    <div class="container">
+        <h2>Signature Selections</h2>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <h3>Artisan Cold Brew</h3>
+                <p>Slow-steeped for 18 hours for bold, smooth flavor.</p>
+            </div>
+            <div class="menu-card">
+                <h3>Hazelnut Latte</h3>
+                <p>Rich espresso layered with creamy hazelnut milk.</p>
+            </div>
+            <div class="menu-card">
+                <h3>Founder Fuel Combo</h3>
+                <p>Premium coffee + gourmet sandwich at a special work-day price.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="workspace" class="section dark-section">
+    <div class="container">
+        <h2>Built For Focus</h2>
+        <p>
+            Quiet zones for deep work. Community tables for collaboration.
+            A café experience that supports ambition, not distraction.
+        </p>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <div class="container">
+        <h2>Visit Urban Brew</h2>
+        <div class="contact-info">
+            <p>123 Creative Street, Downtown</p>
+            <p>Open Daily: 8 AM – 10 PM</p>
+            <p>Email: hello@urbanbrew.com</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 Urban Brew. Crafted for dreamers & doers.
+</footer>
+
+</body>
+</html>
